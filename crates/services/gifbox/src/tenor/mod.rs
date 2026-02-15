@@ -10,7 +10,7 @@ use tokio::sync::RwLock;
 
 pub mod types;
 
-const TENOR_API_BASE_URL: &str = "https://tenor.googleapis.com/v2";
+const TENOR_API_BASE_URL: &str = "https://api.klipy.com/v2";
 
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum TenorError {

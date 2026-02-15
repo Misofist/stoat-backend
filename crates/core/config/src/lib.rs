@@ -198,6 +198,7 @@ pub struct ApiSecurity {
     pub captcha: ApiSecurityCaptcha,
     pub trust_cloudflare: bool,
     pub easypwned: String,
+	// key for supported gif search service (currently https://klipy.com)
     pub tenor_key: String,
 }
 

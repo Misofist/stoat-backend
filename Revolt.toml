@@ -33,6 +33,9 @@ worldwide = "ws://local.revolt.chat:14706"
 
 [api]
 
+[api.security]
+tenor_key = ""
+
 [api.smtp]
 # Email server configuration for verification
 # Defaults to no email verification (host field is empty)
