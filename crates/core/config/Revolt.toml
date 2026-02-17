@@ -58,6 +58,8 @@ voso_legacy_token = ""
 trust_cloudflare = false
 # easypwned endpoint
 easypwned = ""
+# KLIPY API Key
+klipy_key = ""
 # Tenor API Key
 tenor_key = ""
 

@@ -83,7 +83,13 @@ async fn main() -> Result<(), std::io::Error> {
         .await
         .expect("Unable to connect to database");
 
-    let tenor = tenor::Tenor::new(&config.api.security.tenor_key);
+    let use_klipy = !&config.api.security.klipy_key.is_empty();
+    let key = if use_klipy {
+        &config.api.security.klipy_key
+    } else {
+        &config.api.security.tenor_key
+    };
+    let tenor = tenor::Tenor::new(key, &use_klipy);
 
     let ratelimit_storage = ratelimiter::RatelimitStorage::new(ratelimits::GifboxRatelimits);
 

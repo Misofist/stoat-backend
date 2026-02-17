@@ -198,6 +198,7 @@ pub struct ApiSecurity {
     pub captcha: ApiSecurityCaptcha,
     pub trust_cloudflare: bool,
     pub easypwned: String,
+    pub klipy_key: String,
     pub tenor_key: String,
 }
 
